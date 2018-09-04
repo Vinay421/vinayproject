@@ -1,0 +1,25 @@
+<html>
+<body>
+<input type="text" id="input">
+<input type="text" id="input1">
+<input type="button" value="submit" onclick="find()">
+<p id="vinay"></p>
+<script>
+function find()
+{
+  var n = document.getElementById("input").value;
+   var m = document.getElementById("input1").value;
+    var result=[];
+  for(var i = 1 ; i <= n ; i++)
+  {
+     for(var j = 1 ; j <= m ; j++)
+  {
+      result= i*j;
+  }
+  }
+ 
+}
+document.getElementById('vinay').innerHTML = result;
+</script>
+</body>
+</html>

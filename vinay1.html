@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+*{
+color:0099cc;
+}
+* {
+    box-sizing: border-box;
+}
+input[type=submit]{
+padding:10px 30px 10px 30px;
+margin:10px 50px 10px 150px;
+}
+
+input[type=text],input[type=email],input[type=digits],select,textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+form{
+margin:150px 450px;
+}
+body{
+background-image: url("http://citywallpaperhd.com/uploads/photo/original/211-ny-eua.jpg");
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+</style>
+</head>
+<body>
+
+ <form >
+ <font align="center"><h1>FORM</h1></font>
+First name: <input type = "text" name = "first_name" /><br>
+Last name: <input type = "text" name = "last_name" /><br>
+gender:<input type = "radio" name = "gender" value = "male"> Male
+<input type = "radio" name = "gender" value = "female"> female<br>
+Father name: <input type = "text" name = "father_name" /><br>
+mother name: <input type = "text" name = "mother_name" /><br>
+father occupation:<select name = "dropdown">
+<option value = "private" selected>private</option>
+<option value = "government">government</option>
+</select><br>
+User ID : <input type = "text" name = "user_id" /><br>
+address : <br />
+<textarea rows = "5" cols = "30" name = "description">
+ Enter description here...
+</textarea><br>
+school name:<input type = "text" name = "school_name""/><br>
+college name:<input type = "text" name = "college_name" /><br>
+percentage:<input type = "text" name = "percentage" /><br><br>
+resume:<input type = "file" name = "fileupload" accept = "image/*" /><br>
+<input type = "submit" name = "submit" value = "Submit" />
+
+
+</form>

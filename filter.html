@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>vinay</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="invisible" class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Occupation</th>
+        <th>Email</th>
+		<th>salary</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>vinay</td>
+        <td>testing</td>
+        <td>vvinay500@gmail.com</td>
+		 <td>25k</td>
+      </tr>
+      <tr>
+        <td>uday</td>
+        <td>markting</td>
+        <td>uday123@mail.com</td>
+		 <td>27k</td>
+      </tr>
+      <tr>
+        <td>guru charan</td>
+        <td>Devolper</td>
+        <td>gurucharan257@gmail.com</td> 
+		<td>30k</td>
+      </tr>
+      <tr>
+        <td>lakshmi</td>
+        <td>testing</td>
+        <td>gattulakshmi@gmail.com</td> 
+		<td>25k</td>
+      </tr>
+	  <tr>
+        <td>rahul</td>
+        <td>Devolper</td>
+        <td>rahul12@gmail.com</td> 
+		<td>28k</td>
+      </tr>
+	  <tr>
+        <td>kumar</td>
+        <td>testing</td>
+        <td>kumar44@gmail.com</td> 
+		<td>25k</td>
+      </tr>
+	  <tr>
+        <td>raju</td>
+        <td>markting</td>
+        <td>raju42@gmail.com</td> 
+		<td>27k</td>
+      </tr>
+	  <tr>
+        <td>preetham</td>
+        <td>Devopler</td>
+        <td>preetham08@gmail.com</td> 
+		<td>30k</td>
+      </tr>
+	  <tr>
+        <td>kishor</td>
+        <td>testing</td>
+        <td>kishor40@gmail.com</td> 
+		<td>25k</td>
+      </tr>
+	  <tr>
+        <td>mohan</td>
+        <td>testing</td>
+        <td>mohan35@gmail.com</td> 
+		<td>25k</td>
+      </tr>
+	  <tr>
+        <td>praveen</td>
+        <td>Devolper</td>
+        <td>praveen123@gmail.com</td> 
+		<td>29k</td>
+      </tr>
+	  <tr>
+        <td>mohan krishna</td>
+        <td>markting</td>
+        <td>mohankrishna18@gmail.com</td> 
+		<td>25k</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>

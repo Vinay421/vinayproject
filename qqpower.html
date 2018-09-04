@@ -1,0 +1,17 @@
+<html>
+<body>
+<p id="show"></p>
+</body>
+<script>
+function computePower(base,power)
+{
+console.log(Math.pow(base,power));
+return (Math.pow(base,power));
+}
+var base = prompt("Please Enter Base Here");
+var power = prompt("Please Enter Power Here");
+
+var show = document.getElementById("show");
+show.innerHTML ='Power Of a number is '+ computePower(base,power);
+</script>
+</html>

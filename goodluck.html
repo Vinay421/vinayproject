@@ -1,0 +1,22 @@
+<html>
+<body>
+<input id="inputFiled" type=text />
+<input type="button" value="Submit" onclick="check()">
+<p id="random"></p>
+ 
+<script>
+function check() {
+    var x = Math.floor((Math.random() * 10) + 1);
+    var i = document.getElementById('inputFiled').value;
+ 
+    if (i === x) {
+      document.getElementById('random').innerHTML= "Good Work";
+    }else {
+      document.getElementById('random').innerHTML= "Not matched";
+    }
+   
+}
+</script>
+
+</body>
+</html>

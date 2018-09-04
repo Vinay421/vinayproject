@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   
+      <style>
+         body  {
+            background-image: url('/css/images/css.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-attachment:scroll;
+         }.
+      </style>
+      
+   </head>
+   <body>
+   
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      
+   </body>
+</html>

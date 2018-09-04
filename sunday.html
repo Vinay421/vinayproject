@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+var start = 2014, end = 2050;
+
+while(start <= end) {
+    x = new Date(start,1,1).getDay();
+    if (x === 3) {
+        document.write("1st Jan of the year " + start + " is a sunday.");
+		document.write('<br>');
+    }
+    start++;
+}
+
+</script>
+</body>
+</html>

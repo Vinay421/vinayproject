@@ -1,0 +1,104 @@
+<html>
+<head>
+<script type="text/javascript" src="validate.js">
+function validate()
+{ 
+   if( document.StudentRegistration.textnames.value == "" )
+   {
+     alert( "Please provide your Name!" );
+     document.StudentRegistration.textnames.focus() ;
+     return false;
+   }
+   
+   }
+   if( document.StudentRegistration.personaladdress.value == "" )
+   {
+     alert( "Please provide your Personal Address!" );
+     document.StudentRegistration.personaladdress.focus() ;
+     return false;
+   }
+   if ( ( StudentRegistration.sex[0].checked == false ) && ( StudentRegistration.sex[1].checked == false ) )
+   {
+   alert ( "Please choose your Gender: Male or Female" );
+   return false;
+   }   
+   
+ var email = document.StudentRegistration.emailid.value;
+  atpos = email.indexOf("@");
+  dotpos = email.lastIndexOf(".");
+ if (email == "" || atpos < 1 || ( dotpos - atpos < 2 )) 
+ {
+     alert("Please enter correct email ID")
+     document.StudentRegistration.emailid.focus() ;
+     return false;
+ }
+  if( document.StudentRegistration.dob.value == "" )
+   {
+     alert( "Please provide your DOB!" );
+     document.StudentRegistration.dob.focus() ;
+     return false;
+   }
+  if( document.StudentRegistration.mobileno.value == "" ||
+           isNaN( document.StudentRegistration.mobileno.value) ||
+           document.StudentRegistration.mobileno.value.length != 10 )
+   {
+     alert( "Please provide a Mobile No in the format 123." );
+     document.StudentRegistration.mobileno.focus() ;
+     return false;
+   }
+   return( true );
+}
+</script>
+</head>
+<body>
+<form action="#" name="StudentRegistration" onsubmit="return(validate());">
+
+<table cellpadding="2" width="20%" bgcolor="99FFFF" align="center"
+cellspacing="2">
+
+<tr>
+<td colspan=2>
+<center><font size=4><b>Student Registration Form</b></font></center>
+</td>
+</tr>
+
+<tr>
+<td>Name</td>
+<td><input type=text name=textnames id="textname" size="30"></td>
+</tr>
+
+
+<tr>
+<td>Personal Address</td>
+<td><input type="text" name="personaladdress"
+id="personaladdress" size="30"></td>
+</tr>
+
+<tr>
+<td>Sex</td>
+<td><input type="radio" name="sex" value="male" size="10">Male
+<input type="radio" name="sex" value="Female" size="10">Female</td>
+</tr>
+
+<tr>
+<td>EmailId</td>
+<td><input type="text" name="emailid" id="emailid" size="30"></td>
+</tr>
+
+<tr>
+<td>DOB</td>
+<td><input type="text" name="dob" id="dob" size="30"></td>
+</tr>
+
+<tr>
+<td>MobileNo</td>
+<td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+</tr>
+<tr>
+<td><input type="reset"></td>
+<td colspan="2"><input type="submit" value="Submit Form" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

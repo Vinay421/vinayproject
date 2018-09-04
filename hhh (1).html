@@ -1,0 +1,106 @@
+<html>
+
+<head>
+
+<title>Form Validation Example</title>
+
+
+
+<script>
+function ValidateContactForm()
+{
+
+    var correct_way = /^[A-Za-z]+$/;
+    var name = document.getElementById('name').value;
+var email = document.getElementById('email').value;
+var password = document.getElementById('password').value;
+    var nocall = document.getElementById('DoNotCalldocument').value;
+    var comment = document.getElementById('Comment').value;;
+
+    if (name.value == "")
+    {
+        
+		document.getElementById("message").innerHTML = "Please enter your name ";
+		onfocus();
+		return false;
+    }
+        
+		if (name.match(correct_way))
+		        true;
+				else{
+				
+		
+			document.getElementById("message").innerHTML = "Please enter your name with only alphabets.";
+			return false;
+				}
+
+    if (email.value == "")
+    {
+        
+        document.getElementById("mail").innerHTML = "Please enter a valid e-mail address.";
+        return false;
+    }
+    if (email.value.indexOf("@", 5) < 0)
+    {
+        
+        document.getElementById("mail").innerHTML = "Please enter a valid e-mail address.";
+        return false;
+		
+    }
+    if (email.value.indexOf(".", 6) < 0)
+    {
+        
+        document.getElementById("mail").innerHTML = "Please enter a valid e-mail address.";
+        return false;
+    }
+
+    if ((nocall.checked == false) && (phone.value == ""))
+    {
+        
+        document.getElementById("phone").innerHTML = "Please enter your telephone number.";
+        return false;
+    }
+
+    if (comment.value == "")
+    {
+        
+        document.getElementById("textar").innerHTML = "Please provide a detailed description or comment.";
+        return false;
+    }
+    return true;
+}
+
+function EnableDisable(chkbx)
+{
+    if(chkbx.checked == true)
+    {
+        document.ContactForm.Telephone.disabled = true;
+    }
+    else
+    {
+        document.ContactForm.Telephone.disabled = false;
+    }
+}
+</script>
+</head>
+
+<body>
+
+<form method="post" action="mailto:gattu.lakshmi123@gmail.com" 
+name="ContactForm" onsubmit="return ValidateContactForm();">
+    <div>Name: <input type="text"  name="Name">
+	<span id="message"></span></div>
+    <div>E-mail Address:  <input type="email" name="Email">
+	<span id="mail"></span></div>
+    <div>Telephone: <input type="digits"  name="Telephone"><br>
+        <input type="checkbox" name="DoNotCall" 
+        onclick="EnableDisable(this);"> Please do not call me.
+		<span id="phone"></span</div>
+    <div>Comments:  <textarea cols="55" name="Comment">  </textarea>
+	<span id="textar"></span></div>
+    <p><input type="submit" value="Send" name="submit">
+    <input type="reset" value="Reset" name="reset"></p>
+</form>
+
+</body>
+</html>

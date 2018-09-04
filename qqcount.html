@@ -1,0 +1,36 @@
+<html>
+<body>
+
+<input type="text" id="number" >
+<input type="text" id="num" >
+<button onclick="vinay()">submit</button>
+
+<p id="re"></p>
+
+
+<script>
+
+function vinay()
+{
+var string = document.getElementById("number").value;
+var charter= document.getElementById("num").value
+var count = 0;
+for(var i=0; string.length > i; i++){
+    if(string.charAt(i) == charter){
+        ++count; 
+    }
+}
+document.getElementById("re").innerHTML= 'the no of charaters are '+ count ;
+}
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+<html>

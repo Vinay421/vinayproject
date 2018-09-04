@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Bigger elements in an array</title>
+</head>
+<body>
+<input type="text" id="input">
+<script>
+function BiggerElements(val)
+   {
+     return function(evalue, index, array)
+     {
+     return (evalue >= val);
+     };
+   }
+var result = [11, 45, 4, 31, 64, 10]. filter(BiggerElements(10));
+document.getElementById('vinay').inner.HTML = result;
+
+</script>  
+</body>
+</html>

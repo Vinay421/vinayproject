@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<script>
+    function calculate() {
+        var x = document.getElementById("first").value;
+        var y = document.getElementById("second").value;
+        var d = document.getElementById("decision").value;
+        if (d=="*")
+           result = x*y;
+        else if(d=="/")
+           result = x/y;
+         document.getElementById('vinay').value = result;}
+</script>
+  <title></title>
+</head>
+<body>
+<h1></h1>
+
+
+num1:<input id="first" type="text">
+num2:<input id="second" type="text"><br>
+<select id="decision">
+    <option value="*">Multiply</option>
+    <option value="/">Divide</option>
+</select>
+<input type="button" value="=" onclick="calculate()">
+<input type="text" id="vinay"/>
+</body>
+</html>

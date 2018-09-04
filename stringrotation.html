@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Problem 5</title>
+<meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+w3resources
+
+<script>
+function rotateString(){
+var string = document.querySelector("#gif").innerHTML;
+var hello = string.split("");
+var pop = hello.pop();
+var unshift = hello.unshift(pop);
+var fullArray = hello.join("");
+document.querySelector("#gif").innerHTML = fullArray;
+}
+setInterval(function() {for (i=0; i<20; i++) { rotateString()}}, 200);
+</script>
+
+</body>

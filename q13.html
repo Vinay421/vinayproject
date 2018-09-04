@@ -1,0 +1,16 @@
+<html>
+<body>
+
+<input type="text" id="varname" placeholder="Your variable name"><button onclick="getName()">variable name</button>
+
+<script type="text/javascript">
+function getName() {
+var varName = document.getElementById("varname").value ;
+var x = "12";
+this[varName] = x;
+alert("The variable " + this[varName] + " was created.");
+}
+</script>
+
+</body>
+</html>

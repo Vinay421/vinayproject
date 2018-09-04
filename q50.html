@@ -1,0 +1,22 @@
+
+<html>
+<body>
+<script>
+function calculate(){
+var x = document.getElementById('firstNumber').value;
+var y = document.getElementById('secondNumber').value;
+var sum = parseFloat(x) + parseFloat(y);
+
+if(x == 50 || y == 50 || sum == 50){
+document.getElementById('demo').innerHTML = true;
+} else {
+document.getElementById('demo').innerHTML = false;
+}
+}
+</script>
+num1:<input id="firstNumber" type="text">
+num2:<input id="secondNumber" type="text">
+<input type="button" value="submit" onclick="calculate()"><br>
+<h2 id="demo"></p>
+</body>
+</html>

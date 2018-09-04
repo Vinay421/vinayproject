@@ -1,0 +1,13 @@
+<html>
+<body>
+<input type="text" id="file name" placeholder="file name"><button onclick="ext()">submit</button>
+<p id="exe"></p>
+<script>
+function ext() {
+var a = document.getElementById("file name").value;
+var extension = a.split(".").pop();
+document.getElementById('exe').innerHTML= extension;
+}
+</script>
+</body>
+</html>

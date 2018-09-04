@@ -1,0 +1,29 @@
+
+<html>
+<body>
+
+
+<input type="text" name="name" id="getvalue1">
+
+<input type="text" name="name" id="getvalue2">
+
+<button onclick="myfunction()">Sum</button>
+<p id="demo"></p>
+<script>
+function myfunction(){
+var a = document.getElementById("getvalue1").value;
+var c = document.getElementById("getvalue2").value;
+var b ;
+var num1 = parseInt(a);
+var num2 = parseInt(c);
+var num3 = parseInt(b);
+if(num1 == num2){
+num3 = (num1 + num2) * 3;
+}else{
+num3 = num1 + num2;
+}
+document.getElementById("demo").innerHTML = num3;
+}
+</script>
+</html>
+</body>

@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+<title>CSS Webpage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.border{
+margin:20px;
+width:96%;
+height:100%;
+border:1px solid black;
+padding: 20px;
+}
+p.ex1 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+}
+
+p.ex2 {
+    border: 1px solid black;
+    outline-style: double;
+    outline-color: green;
+}
+
+p.ex3 {
+    border: 1px solid black;
+    outline-style: outset;
+    outline-color: yellow;
+}
+p.ex4 {
+    margin: 30px;
+    background:yellow;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<font><h1>webpage</h1></font>
+</div>
+
+<div class="topnav">
+<a href="home1.html">HOME</a>
+  <a href="font.html">FONT</a>
+  <a href="lineheight.html">LINE HEIGHT</a>
+  <a href="position.html">POSITION</a>
+   <a href="wordwrap.html">WORD RAP</a>
+    <a href="verticalalign.html">VERTICAL-ALIGN</a>
+	 <a href="outline.html">OUTLINE</a>
+	  <a href="opacity.html">OPACITY</a>
+</div>
+<div class="border">
+<h2>The outline-color Property</h2>
+
+<p class="ex1">A solid red outline.</p>
+<p class="ex2">A double green outline.</p>
+<p class="ex3">An outset yellow outline.</p>
+<h2>The outline-offset Property</h2>
+
+<p class="ex4">This paragraph has an outline 15px outside the border edge.</p>
+
+
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<body>
+<input type="tel" id="number" ><button onclick="diff()">submit</button>
+<p id="vinay"></p>
+<script>
+function diff(){
+var x = document.getElementById("number").value;
+
+if (x < 0)
+{
+document.getElementById('vinay').innerHTML= 'Negtive number';
+}else{
+document.getElementById('vinay').innerHTML= 'Positive number';
+}}
+</script>
+</body>
+</html>

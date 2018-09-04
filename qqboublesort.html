@@ -1,0 +1,34 @@
+<html>
+<body>
+
+<input type="text" id="number" >
+<button onclick="vinay()">submit</button>
+
+<p id="re"></p>
+
+
+<script>
+
+function vinay()
+{
+var arraystring =[document.getElementById("number").value];
+var temp;
+for (i = 0; i <= arraystring.length-1; i++)
+  {
+    if (arraystring[i] > arraystring[i+1])
+      {
+        temp = arraystring[i+1];
+        arraystring[i+1] = arraystring[i];
+        arraystring[i] = temp;
+        i = i-2;
+      }
+  }
+document.write(arraystring);
+
+</script>
+
+
+
+
+</body>
+<html>

@@ -1,0 +1,20 @@
+<html>
+<body>
+<input type="tel" id="number" ><button onclick="diff()">submit</button>
+<p id="vinay"></p>
+<script>
+function diff(){
+var x = document.getElementById("number").value;
+var y = 19;
+
+if (x > y)
+{
+result = (x - y) * 3;
+document.getElementById('vinay').innerHTML= result;
+}else{
+result = y - x;
+document.getElementById('vinay').innerHTML= result;
+}}
+</script>
+</body>
+</html>

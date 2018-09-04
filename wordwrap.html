@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+<title>CSS Webpage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.border{
+margin:20px;
+width:96%;
+height:100%;
+border:1px solid black;
+padding: 20px;
+}
+div.a {
+    word-wrap: normal;
+	width: 150px; 
+    border: 1px solid #000000;
+}
+
+div.b {
+    word-wrap: break-word;
+	width: 150px; 
+    border: 1px solid #000000;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<font><h1>webpage</h1></font>
+</div>
+
+<div class="topnav">
+<a href="home1.html">HOME</a>
+  <a href="font.html">FONT</a>
+  <a href="lineheight.html">LINE HEIGHT</a>
+  <a href="position.html">POSITION</a>
+   <a href="wordwrap.html">WORD RAP</a>
+    <a href="verticalalign.html">VERTICAL-ALIGN</a>
+	 <a href="outline.html">OUTLINE</a>
+	  <a href="opacity.html">OPACITY</a>
+</div>
+<div class="border">
+<h1>The word-wrap Property</h1>
+
+<h2>word-wrap: normal (default):</h2>
+<div class="a"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</div>
+
+<h2>word-wrap: break-word:</h2>
+<div class="b"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</div>
+
+
+</div>
+
+
+</body>
+</html>

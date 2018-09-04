@@ -1,0 +1,17 @@
+
+<html>
+<body>
+<input type="tel" id="number" ><button onclick="twenty()">submit</button>
+<p id="vinay"></p>
+<script>
+function twenty(){
+var x = document.getElementById("number").value;
+if(Math.abs(100-x)<=20 || Math.abs(400-x)<=20) {
+document.getElementById('vinay').innerHTML= 'true';
+}else{
+document.getElementById('vinay').innerHTML= 'false';
+}
+}
+</script>
+</body>
+</html>

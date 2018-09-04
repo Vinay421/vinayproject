@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>FillItemsandDisplay</title>
+<script type="text/javascript">
+
+var Arrays = [];
+function AddToArray() {
+Arrays.push(parseInt(document.getElementById("txtinput").value));
+document.getElementById("txtinput").value = "";
+}
+
+function Display() {
+
+for (var i = 0; i <= Arrays.length - 1; i++) {
+document.write("Element :" + i + " " + Arrays[i] + "
+");
+
+}
+}
+</script>
+</head>
+<body>
+<div>
+Enter any Number here:
+<input type="text" id="txtinput"/>
+
+
+<input type="button" id="btnAdd" value="Add" onclick="AddToArray()"/>
+<input type="button" id="btnDisplay" value="Display" onclick="Display()"/>
+</div>
+</body>
+</html>

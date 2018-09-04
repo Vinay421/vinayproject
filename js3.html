@@ -1,0 +1,30 @@
+<html>
+<body>
+<h2>enter 4 number user</h2>
+<p id="myprint"></p>
+<button onclick="userinput()">Try it</button>
+
+<script>
+var numbers = [];
+    
+
+function userinput() {
+for(var i=0; i<10; i++){
+     var num = prompt ("Enter a number 1 at a time, from 1-9 until prompts ask you 9 times:");
+	 numbers.push(num);
+	 
+}	 
+
+
+
+
+
+    numbers.sort(function(a, b){return a - b});
+    document.getElementById("myprint").innerHTML = numbers;
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<input type="text" id="userinput" />
+<input type ="button" onclick="addTo()" value="Add" />
+ 
+<script>
+ 
+
+ 
+function addTo() {
+var myarr = [];
+   myarr.push(document.getElementById("userinput").value);
+    for(var i=0; i<myarr.length ; i++){
+	document.write(myarr[i]);
+	}
+}
+ 
+</script>
+</body>
+</html>
